@@ -15,9 +15,13 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'mysql2'
+group :production do
+  gem 'mysql2'
+end
+
 gem 'haml-rails'
 gem 'kgio', '2.7.4'
 gem 'raindrops', '0.10.0'
 gem 'unicorn', '4.5.0'
 gem 'httparty'
+gem 'russian'
