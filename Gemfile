@@ -15,7 +15,6 @@ group :development do
   gem 'sqlite3'
 end
 
-gem 'sqlite3'
 gem 'haml-rails'
 gem 'kgio', '2.7.4'
 gem 'raindrops', '0.10.0'
