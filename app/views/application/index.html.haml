@@ -9,7 +9,7 @@
       .phone
         .number
           8 800 2000 600
-        .button
+        .button#get-call
           Заказать звонок
 
 
@@ -30,13 +30,15 @@
           .to-do
             Оставьте заявку и получите бесплатную консультацию уже через 15 минут.
 
-      .span4.offset1
-        .form
-          %form
-            %input{type: :text, placeholder: 'Введите ваше имя'}
-            %input{type: :text, placeholder: 'Введите ваш email'}
-            %input{type: :text, placeholder: 'Введите ваш номер телефона'}
-            %input.send-form.send-top-form{type: :submit, value: 'Получить консультацию'}
+      .span4.offset1.consult-form-wrapper
+        .success
+          Мы вам скоро перезвоним!
+        %form.form
+          %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
+          %input{type: :text, placeholder: 'Введите ваш email', name: :email}
+          .phone-error Правильный формат 8 xxx xxx xx xx
+          %input{type: :text, placeholder: 'Введите ваш номер телефона', name: :phone}
+          .submit-order.button Получить консультацию
 
 
 
@@ -135,10 +137,23 @@
 
 
       .span4.offset1
-        .form
-          %form
-            %input{type: :text, placeholder: 'Введите ваше имя'}
-            %input{type: :text, placeholder: 'Введите ваш email'}
-            %input{type: :text, placeholder: 'Введите ваш номер телефона'}
-            %input{type: :submit, value: 'Получить консультацию'}
+        .success
+          Мы вам скоро перезвоним!
+        %form.form
+          %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
+          %input{type: :text, placeholder: 'Введите ваш email', name: :email}
+          .phone-error Правильный формат 8 xxx xxx xx xx
+          %input{type: :text, placeholder: 'Введите ваш номер телефона', name: :phone}
+          .submit-order.button Получить консультацию
 
+#request-call-dialog
+  .header-transparent
+  .content
+    .success
+      Мы вам скоро перезвоним!
+    %form#call-me-form{data: {dialog: 'yes'}}
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      .phone-error Правильный формат 8 xxx xxx xx xx
+      %input{type: :text, name: :phone, placeholder: 'Введите ваш номер телефона'}
+      .button.submit-order
+        Заказать звонок
