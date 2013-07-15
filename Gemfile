@@ -12,6 +12,7 @@ end
 group :development do
   gem 'thin'
   gem 'capistrano'
+  gem 'sqlite3'
 end
 
 gem 'sqlite3'
