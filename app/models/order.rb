@@ -11,7 +11,7 @@ private
             method: 'push_msg',
             email: 'agatovs@gmail.com',
             password: 'avv6rqE',
-            phone: '79629186985',
+            phone: '79037928959',
             text: get_sms,
             sender_name: 'Konsalta'
         }
