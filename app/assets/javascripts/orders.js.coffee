@@ -11,9 +11,9 @@ $ ->
     if username.val().length < 2
       username.attr('style', 'border: 1px solid red;')
       noValidFields++
-    if !validateEmail(email.val())
-      email.attr('style', 'border: 1px solid red;')
-      noValidFields++
+#    if !validateEmail(email.val())
+#      email.attr('style', 'border: 1px solid red;')
+#      noValidFields++
 
     if noValidFields > 0
       return false
