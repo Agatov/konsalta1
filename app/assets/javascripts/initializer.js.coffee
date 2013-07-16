@@ -1,7 +1,4 @@
 $ ->
-  $('body').bind 'click', ->
-    $('.phone-error').hide()
-    $('input[name=phone]').attr('style', '')
   $('#get-call').bind 'click', ->
     dialog = $('#request-call-dialog')
 
