@@ -9,13 +9,14 @@ $ ->
     
     if phone.val().length != 11
       phone.parent().find('.phone-error').hide(100).show(300)
-      phone.attr('style', 'border: 1px solid red;')
+      phone.attr('style', 'border: 1px solid #C4483C;')
       noValidFields++
     if username.val().length < 2
       username.attr('style', 'border: 1px solid red;')
       noValidFields++
     if $(@).parent().attr('id') != 'call-me-form' and !validateEmail(email.val())
       email.attr('style', 'border: 1px solid red;')
+      username.attr('style', 'border: 1px solid #C4483C;')
       noValidFields++
 
     if noValidFields > 0
