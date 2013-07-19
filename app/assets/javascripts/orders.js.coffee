@@ -20,7 +20,6 @@ $ ->
       noValidFields++
 
     if noValidFields > 0
-      alert noValidFields
       return false
     
     $.post 'orders', {'order[username]': username.val(), 'order[phone]': phone.val(), 'order[email]': email.val()}, (data) =>
