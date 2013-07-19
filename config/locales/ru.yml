@@ -5,3 +5,9 @@ ru:
   sms:
     sms_text: "%{username} : %{phone} %{date}"
 
+  emails:
+    konsalta_mail:
+      subject: Заявка на консультацию
+    call_mail:
+      subject: Заявка на звонок
+
