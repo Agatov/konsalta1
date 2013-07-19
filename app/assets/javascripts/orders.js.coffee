@@ -4,7 +4,6 @@ $ ->
     phone = $(@).parent().find('input[name=phone]')
     email = $(@).parent().find('input[name=email]')
     noValidFields = 0
-
     checkPhone phone
     
     if phone.val().length != 11
@@ -12,11 +11,10 @@ $ ->
       phone.attr('style', 'border: 1px solid #C4483C;')
       noValidFields++
     if username.val().length < 2
-      username.attr('style', 'border: 1px solid red;')
+      username.attr('style', 'border: 1px solid #C4483C;')
       noValidFields++
     if $(@).parent().attr('id') != 'call-me-form' and !validateEmail(email.val())
-      email.attr('style', 'border: 1px solid red;')
-      username.attr('style', 'border: 1px solid #C4483C;')
+      email.attr('style', 'border: 1px solid #C4483C;')
       noValidFields++
 
     if noValidFields > 0
@@ -42,7 +40,7 @@ $ ->
 
 window.validateEmail = (email) ->
   re = /\S+@\S+\.\S+/
-  return false
+  return re.test(email)
 window.checkPhone = (phone_field) ->
   number = phone_field.val()
   number_arr = number.split('')
