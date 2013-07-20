@@ -6,7 +6,7 @@ default_environment['GEM_PATH']= '/usr/local/lib/ruby/gems/1.9.1'
 
 
 set :rails_env, 'production'
-set :branch, 'master'
+set :branch, 'dev'
 set :application, 'konsalta_landing'
 
 default_run_options[:pty] = true
