@@ -15,7 +15,7 @@ class OrderMailer < ActionMailer::Base
 
 private
   def send_email subject
-    mail(to: 'konstantin@konsalta.com', subject: subject)
+    mail(to: 'denis@konsalta.com', subject: subject)
   end
 
   def build_params params
