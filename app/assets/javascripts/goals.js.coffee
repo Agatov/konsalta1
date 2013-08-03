@@ -9,15 +9,6 @@ $ ->
   $('#video-container').bind 'click', ->
     reachGoal 'video_view'
 
-#  $('#call-me-form .submit-order').bind 'click', ->
-#    reachGoal 'submit_order_click'
-#
-#  $('#first-form .submit-order').bind 'click', ->
-#    reachGoal 'first_form_submit_click'
-#
-#  $('#last-form .submit-order').bind 'click', ->
-#    reachGoal 'last_form_submit_click'
-
   $(document).on 'call-me-form-invalid', ->
     reachGoal 'call_me_form_invalid'
 
