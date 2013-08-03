@@ -33,7 +33,7 @@
       .span4.offset1.consult-form-wrapper
         .success
           Мы вам скоро перезвоним!
-        %form.form
+        %form.form#first-form
           %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
           %input{type: :text, placeholder: 'Введите ваш email', name: :email}
           .phone-error Правильный формат 8 xxx xxx xx xx
@@ -48,7 +48,7 @@
 
   .wrapper
     .video-block
-      %iframe{src: '//www.youtube.com/embed/V7teS1yV2UA?rel=0',
+      %iframe{src: '//www.youtube.com/embed/V7teS1yV2UA?rel=0&enablejsapi=1',
               width: 960,
               height: 540, frameborder: 0}
 
@@ -139,7 +139,7 @@
       .span4.offset1
         .success
           Мы вам скоро перезвоним!
-        %form.form
+        %form.form#last-form
           %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
           %input{type: :text, placeholder: 'Введите ваш email', name: :email}
           .phone-error Правильный формат 8 xxx xxx xx xx

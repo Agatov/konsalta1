@@ -5,6 +5,8 @@ $ ->
     email = $(@).parent().find('input[name=email]')
     noValidFields = 0
     checkPhone phone
+
+    parentFormID = $(@).parent().attr('id')
     
     if phone.val().length != 11
       phone.parent().find('.phone-error').hide(100).show(300)
@@ -18,7 +20,10 @@ $ ->
       noValidFields++
 
     if noValidFields > 0
+      $(document).trigger "#{parentFormID}-invalid"
       return false
+
+    $(document).trigger "#{parentFormID}-valid"
     
     $.post 'orders', {'order[username]': username.val(), 'order[phone]': phone.val(), 'order[email]': email.val()}, (data) =>
       if data.status == 'ok'
