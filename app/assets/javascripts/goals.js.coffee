@@ -44,4 +44,4 @@ $ ->
 
 
 reachGoal = (goal_name) ->
-  console.log goal_name
+  yaCounter21877312.reachGoal goal_name
