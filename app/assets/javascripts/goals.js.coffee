@@ -44,4 +44,4 @@ $ ->
 
 
 reachGoal = (goal_name) ->
-  yaCounter21877312.reachGoal goal_name
+  yaCounter22020289.reachGoal goal_name
