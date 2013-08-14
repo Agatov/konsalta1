@@ -4,7 +4,7 @@
   .row.header
     .span8
       %h1.blue
-        Закрытие юридических лиц методом присоединения по РФ
+        Ликвидация предприятий путем присоединения
     .span4
       .phone
         .number
@@ -21,67 +21,21 @@
       .span7
         .action
           .ooo
-            %span.blue
-              До 30 августа
-            для начала работ по ликвидации необходимо внести лишь
-            %span.red
-              10% предоплаты
-
-          .to-do
-            Оставьте заявку и получите бесплатную консультацию уже через 15 минут.
+            Ликвидируем юридические лица на территории РФ с гарантированным результатом.
+            Сделаем всё в срок или вернем деньги обратно.
 
       .span4.offset1.consult-form-wrapper
         .success
           Мы вам скоро перезвоним!
+
         %form.form#first-form
-          %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
-          %input{type: :text, placeholder: 'Введите ваш email', name: :email}
+          .form-header
+            Оставьте заявку на консультацию в августе и получите скидку 20%
+          %input{type: :text, placeholder: 'Имя', name: :username}
+          %input{type: :text, placeholder: 'Email (не обязательно)', name: :email}
           .phone-error Правильный формат 8 xxx xxx xx xx
-          %input{type: :text, placeholder: 'Введите ваш номер телефона', name: :phone}
+          %input{type: :text, placeholder: 'Телефон', name: :phone}
           .submit-order.button Получить консультацию
-
-
-
-%section
-  .section-title
-    Все что вам стоит узнать о ликвидации методом присоединения
-
-  .wrapper
-    .video-block
-      %iframe{src: '//www.youtube.com/embed/V7teS1yV2UA?rel=0&enablejsapi=1',
-              width: 960,
-              height: 540, frameborder: 0}
-
-
-%section.strip
-  .section-title
-    Существует два способа ликвидации присоединением
-
-  .wrapper
-    .row
-      .span6
-        .variant
-          %h4
-            Обычная ликвидация присоединением
-
-          %h3
-            45 000 рублей.
-
-          %p
-            Идеальный вариант по соотношению цена-качество для компаний, не имевших больших оборотов.
-
-
-      .span6
-        .variant
-          %h4
-            Присоединение с ликвидацией правопреемника
-
-          %h3
-            250 000 рублей.
-
-          %p
-            VIP пакет, полное прекращение всех обязательств перед третьими лицами
-            и исключение каких-либо претензий со стороны налоговой в будущем.
 
 
 %section
@@ -119,31 +73,70 @@
           месяца.
 
 
+%section
+  .section-title
+    Это вам вам стоит узнать о ликвидации путем присоединения
+
+  .wrapper
+    .video-block
+      %iframe{src: '//www.youtube.com/embed/V7teS1yV2UA?rel=0&enablejsapi=1',
+              width: 960,
+              height: 540, frameborder: 0}
+
+
+%section.strip
+  .section-title
+    Предлагаем вам 2 способа ликвидации
+
+  .wrapper
+    .row
+      .span6
+        .variant
+          %h4
+            Обычная ликвидация присоединением
+
+          %h3
+            %span.strike 60 000
+            48 000 рублей
+
+          %p
+            Идеальный вариант по соотношению цена-качество для компаний, не имевших больших оборотов.
+
+
+      .span6
+        .variant
+          %h4
+            Присоединение с ликвидацией правопреемника
+
+          %h3
+            %span.strike 250 000
+            200 000 рублей.
+
+          %p
+            VIP пакет, полное прекращение всех обязательств перед третьими лицами
+            и исключение каких-либо претензий со стороны налоговой в будущем.
+
+
 .offer
   .wrapper
     .row
       .span7
         .action
           .ooo
-            %span.blue
-              100% гарантия!
-            %br
-            Мы закроем вашу компанию за
-            %span.red 4 месяца
-            или вернем все деньги.
+            Ликвидируем юридические лица на территории РФ с гарантированным результатом.
+            Сделаем всё в срок или вернем деньги обратно.
 
-          .to-do
-            Оставьте заявку и получите бесплатную консультацию уже через 15 минут.
-
-
-      .span4.offset1
+      .span4.offset1.consult-form-wrapper
         .success
           Мы вам скоро перезвоним!
-        %form.form#last-form
-          %input{type: :text, placeholder: 'Введите ваше имя', name: :username}
-          %input{type: :text, placeholder: 'Введите ваш email', name: :email}
+
+        %form.form#first-form
+          .form-header
+            Оставьте заявку на консультацию в августе и получите скидку 20%
+          %input{type: :text, placeholder: 'Имя', name: :username}
+          %input{type: :text, placeholder: 'Email (не обязательно)', name: :email}
           .phone-error Правильный формат 8 xxx xxx xx xx
-          %input{type: :text, placeholder: 'Введите ваш номер телефона', name: :phone}
+          %input{type: :text, placeholder: 'Телефон', name: :phone}
           .submit-order.button Получить консультацию
 
 #request-call-dialog
@@ -152,8 +145,8 @@
     .success
       Мы вам скоро перезвоним!
     %form#call-me-form{data: {dialog: 'yes'}}
-      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :username, placeholder: 'Имя'}
       .phone-error Правильный формат 8 xxx xxx xx xx
-      %input{type: :text, name: :phone, placeholder: 'Введите ваш номер телефона'}
+      %input{type: :text, name: :phone, placeholder: 'Телефон'}
       .button.submit-order
         Заказать звонок
